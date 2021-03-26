@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Movie Collection</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <div class="bg-dark text-white p-2">
+        <span class="navbar-brand ml-2">Joel Hilton Movie Collection</span>
+        <a class="btn m-1 btn-outline-info float-right text-white" asp-action="MyPodcasts">PODCASTS</a>
+        <a class="btn m-1 btn-outline-info float-right text-white" asp-action="MovieForm">ENTER MOVIE</a>
+        <a class="btn m-1 btn-outline-info float-right text-white" asp-action="MovieList">MOVIE LIST</a>
+        <a class="btn m-1 btn-outline-info text-white float-right" asp-action="Index">HOME</a>
+    </div>
+    <h1 class="text-center">@ViewBag.Title</h1>
+    <br />
+    <br />
+
+    @RenderBody()
+
+    <br />
+    <br />
+    <br />
+
+    <footer class="text-center">Briton Demars, Copyright 2021</footer>
+
+</body>
+
+</html>
